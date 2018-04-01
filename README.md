@@ -1,2 +1,2 @@
-# PWIproject
-Projekt zaliczeniowy na przedmiot Programowanie w Internecie
+# PWI
+Projekt zaliczeniowy na przedmiot Programowanie w Internecie. Strona internetowa fikcyjnej kawiarnii.
