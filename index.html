@@ -2,85 +2,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
-	<title>Strona główna</title>
+	<title>Main page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.2/angular-translate.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.js"></script>
-    <script src="script.js" type="text/javascript"></script>
-    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
-    <script>CookieAlert.init();</script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body data-ng-app="app" data-ng-controller="myCntrl">
     <section class="intro">
         <div class="inner">
             <div class="nav" id="myTopnav">
-                <a href="#" class="scroll2" translate>HOME</a>
-                <a href="#about" class="scroll" translate>ABOUT</a>
-                <a href="#servicescakes" class="scroll" translate>SERVICESC</a>
-                <a href="#servicesbreakfast" class="scroll" translate>SERVICESB</a>
-                <a href="#contact" class="scroll" translate>CONTACT</a>
+                <a href="#" class="scrollUp" translate>HOME</a>
+                <a href="#about" class="scrollDown" translate>ABOUT</a>
+                <a href="#servicescakes" class="scrollDown" translate>SERVICESC</a>
+                <a href="#servicesbreakfast" class="scrollDown" translate>SERVICESB</a>
+                <a href="#contact" class="scrollDown" translate>CONTACT</a>
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-                <div class="lan" data-ng-click="changeLanguage('pl')"><img class="rig-img" src="flag-pl.png" alt="pl"></div>
-                <div class="lan" data-ng-click="changeLanguage('en')"><img class="rig-img" src="bri.png" alt="en"></div>
+                <div class="lan" data-ng-click="changeLanguage('pl')"><img class="rig-img" src="photos/lang/flag-pl.png" alt="pl"></div>
+                <div class="lan" data-ng-click="changeLanguage('en')"><img class="rig-img" src="photos/lang/flag-en.png" alt="en"></div>
             </div>
             <div class="info">
-                <header>Caffeteria di Magda</header>
+                <header>Caffeteria</header>
                 <div class="languages">
-                    <div class="lan2" data-ng-click="changeLanguage('pl')"><img class="rig-img" src="flag-pl.png" alt="pl"></div>
-                    <div class="lan2" data-ng-click="changeLanguage('en')"><img class="rig-img" src="bri.png" alt="en"></div>
+                    <div class="lan2" data-ng-click="changeLanguage('pl')"><img class="rig-img" src="photos/lang/flag-pl.png" alt="pl"></div>
+                    <div class="lan2" data-ng-click="changeLanguage('en')"><img class="rig-img" src="photos/lang/flag-en.png" alt="en"></div>
                 </div>
                 <div class="details" translate>DETAILS</div>
-                
             </div> 
         </div>
     </section>
-    <div id="content">
+    <section id="content">
         <div data-ng-view></div>
-    </div>
+    </section>
     <footer>
         Copyright &copy; 2017 Magda Sidor 
     </footer>
- <script>
-    
- /*sticky menu*/
-  $(document).ready(function() {
-		   	var stickyNavTop = $('.nav').offset().top;
-		   	var stickyNav = function(){
-			    var scrollTop = $(window).scrollTop(); 
-			    if (scrollTop > stickyNavTop) { 
-			        $('.nav').addClass('sticky');
-			    } else {
-			        $('.nav').removeClass('sticky'); 
-			    }
-			};
-      stickyNav();
-      $(window).scroll(function() {
-          stickyNav();
-      });
-  });
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "nav") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav";
-        }
-    } 
-    $(".scroll").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#content").offset().top
-    }, 2000);
-});
-      $(".scroll2").click(function() {
-    $('html, body').animate({
-        scrollTop: $(".intro").offset().top
-    }, 2000);
-});
-</script>
- 
-</body>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.7.2/angular-translate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.js"></script>
+    <script src="scripts/angularscript.js" type="text/javascript"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+    <script>CookieAlert.init();</script>
+ </body>
 </html>

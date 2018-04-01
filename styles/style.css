@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Kristi|Lato');
+
+/* index.html styles */
+.intro, body, html {
+    height: 100%;
+    width: 100%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.intro {
+    margin: auto;
+    background: url('../photos/main/main.jpg');
+    display: table;
+    background-size: cover;
+}
+.intro .inner {
+    display: table-cell;
+    width: 100%;
+    max-width: none;
+}
+/* navigation styles */
+.nav {
+    overflow: hidden;
+    background-color: #191970;
+    opacity: .6;
+    font-family: Lato, sans-serif;
+}
+.nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav a:hover {
+    color: #f5f5f5;
+}
+.nav .icon {
+    display: none;
+}
+.lan {
+    display: block;
+    float: right;
+    height: 20px;
+    width: 30px;
+    padding-top: 1%;
+    padding-right: 1%;
+}
+.lan2 {
+    visibility: hidden;
+    display: block;
+    float: left;
+    height: 20px;
+    width: 30px;
+    padding-top: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+.details {
+    float:  left;
+    font-size: 40%;
+    font-family: 'Amatic SC', cursive;
+    color: #639;
+}
+.info {
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 25%;
+    padding-left: 75%;
+    font-size: 350%;
+    color: #000;
+    font-family: Kristi, cursive;
+    padding-bottom:  0;
+}
+.languages {
+    padding-left: 38%;
+    padding-right: 38%;
+    margin-top:  3%;
+}
+/* content styles */
+#content {
+    min-height: 98%;
+}
+#content h1 {
+    padding-top: 2%;
+    font-family: Kristi, cursive;
+    text-align: center;
+    font-size: 350%;
+}
+footer {
+    font-size: 130%;
+    background-color: #d3d3d3;
+    margin-top: 2%;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: #fff;
+}
+/* pages styles */
+.infodetails {
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 170%;
+    padding-bottom: 2%;
+    font-family: 'Amatic SC', cursive;
+    color: #639;
+}
+/* about.html styles */
+.img {
+    width: 60%;
+    margin-left: 20%;
+}
+/* servicesbreakfast.html and servicecakes.htm styles */
+#rig li {
+    vertical-align: middle;
+}
+.rig-cell {
+    overflow: hidden;
+}
+#rig li, .rig-text {
+    box-sizing: border-box;
+}
+#rig {
+    margin: 0 auto;
+}
+.rig-text {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    color: #fff;
+}
+#rig {
+    max-width: 1400px;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+    background-color: #000;
+}
+#rig li {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+.rig-cell {
+    display: block;
+    position: relative;
+}
+.rig-overlay, .rig-text {
+    position: absolute;
+    left: 0;
+}
+#rig li:hover .rig-img {
+    transform: scale(1.05);
+}
+.rig-overlay {
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url(img/link.png) center 20% no-repeat #FFD300;
+    background-size: 50px 50px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .6s;
+}
+.rig-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+    transform: scale(1);
+    transition: all 1s;
+}
+.rig-text {
+    display: block;
+    padding: 0 30px;
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 400!important;
+    top: 40%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateY(-20px);
+    transition: all .3s;
+}
+#rig li:hover .rig-overlay {
+    opacity: .8;
+}
+#rig li:hover .rig-text {
+    transform: translateY(0);
+    opacity: .9;
+}
+/* contact.html styles */
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+input[type=text], input[type=textarea] {
+    background-color: #f5f5f5;
+    width: 100%;
+    margin-top: 1em;
+    display: block;
+}
+#button1, input[type=text], input[type=textarea] {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+}
+input[type=text] {
+    resize: none;
+}
+input[type=textarea] {
+    height: 100px;
+    font-family: Merriweather, sans-serif;
+}
+#button1 {
+    width: 20%;
+    background-color: #639;
+    color: #fff;
+}
+#button1:hover {
+    background-color: #696969;
+}
+.center {
+    text-align: center;
+    font-family: Lato, sans-serif;
+}
+
+
+
+
+#nav2, .infodetails, .nav a {
+    text-align: center;
+}
+
+
+
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+.right {
+    width: 50%;
+}
+.left {
+    margin-right: 2%;
+}
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+/* mobile wersions */
+@media (max-width:9000px) {
+    #rig li {
+        width: 25%;
+    }
+}
+@media screen and (max-width:700px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .info {
+        text-align: center;
+        padding-top: 25%;
+        padding-left: 0;
+        font-size: 350%;
+        color: #000;
+        font-family: Kristi, cursive;
+    }
+    .details {
+        visibility: hidden;
+    }
+    #rig li {
+        width: 33.33%;
+    }
+}
+@media screen and (max-width:600px) {
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+@media (max-width:550px) {
+    #form, #rig li, .title {
+        width: 100%;
+    }
+    #form {
+        margin: 0 auto;
+    }
+    .title {
+        text-align: center;
+    }
+    input, select {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    button {
+        width: 30%;
+    }
+    .infodetails {
+        width: 96%;
+        padding: 2%;
+        font-size: 150%;
+        font-family: 'Amatic SC', cursive;
+        color: #639;
+    }
+    .info {
+    padding-top: 40%;
+    }
+    .img {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .lan {
+        visibility:  hidden;
+    }
+    .lan2 {
+        visibility:  visible;
+    }
+}
